@@ -6,3 +6,5 @@ __pycache__/
 *.py[cod]
 node_modules/
 README_CI_template.md
+*.pyc 
+*.sqlite3
