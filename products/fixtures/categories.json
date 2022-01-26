@@ -2,44 +2,36 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "activewear",
-            "friendly_name": "Activewear"
+            "name": "dress_shirts",
+            "friendly_name": "Dress shirts"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "bed_bath",
-            "friendly_name": "Bed & Bath"
+            "name": "sweatshirts_hoodies",
+            "friendly_name": "Sweatshirts & Hoodies"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "clearance",
-            "friendly_name": "Clearance"
+            "name": "t_shirts",
+            "friendly_name": "T-shirts"
         }
     },
     {
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "deals",
-            "friendly_name": "Deals"
+            "name": "sweat_pants",
+            "friendly_name": "Sweat pants"
         }
     },
     {
         "pk": 5,
-        "model": "products.category",
-        "fields": {
-            "name": "essentials",
-            "friendly_name": "Essentials"
-        }
-    },
-    {
-        "pk": 6,
         "model": "products.category",
         "fields": {
             "name": "jeans",
@@ -47,15 +39,31 @@
         }
     },
     {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "chinos",
+            "friendly_name": "Chinos"
+        }
+    },
+    {
         "pk": 7,
         "model": "products.category",
         "fields": {
-            "name": "kitchen_dining",
-            "friendly_name": "Kitchen & Dining"
+            "name": "boxers",
+            "friendly_name": "Boxers"
         }
     },
     {
         "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "socks",
+            "friendly_name": "Socks"
+        }
+    },
+    {
+        "pk": 9,
         "model": "products.category",
         "fields": {
             "name": "new_arrivals",
@@ -63,11 +71,19 @@
         }
     },
     {
-        "pk": 9,
+        "pk": 10,
         "model": "products.category",
         "fields": {
-            "name": "shirts",
-            "friendly_name": "Shirts"
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
         }
     }
 ]
