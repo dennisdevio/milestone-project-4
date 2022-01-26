@@ -18,10 +18,11 @@
                 Shirts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Dress shirts</a>
-                <a href="" class="dropdown-item">Sweatshirts & Hoodies</a>
-                <a href="" class="dropdown-item">T-shirts</a>
-                <a href="" class="dropdown-item">All shirts </a>
+                <a href="{% url 'products' %}?category=dress_shirts" class="dropdown-item">Dress shirts</a>
+                <a href="{% url 'products' %}?category=hoodies" class="dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-shirts</a>
+                <a href="{% url 'products' %}?category=dress_shirts,sweatshirts,hoodies,t_shirts"
+                    class="dropdown-item">All shirts </a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -30,10 +31,10 @@
                 Pants
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Sweat pants</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Chinos</a>
-                <a href="" class="dropdown-item">All pants</a>
+                <a href="{% url 'products' %}?category=sweat_pants" class="dropdown-item">Sweat pants</a>
+                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=chinos" class="dropdown-item">Chinos</a>
+                <a href="{% url 'products' %}?category=sweat_pants,jeans,chinos" class="dropdown-item">All pants</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -42,9 +43,9 @@
                 Underwear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Boxers</a>
-                <a href="" class="dropdown-item">Socks</a>
-                <a href="" class="dropdown-item">All underwear</a>
+                <a href="{% url 'products' %}?category=boxers" class="dropdown-item">Boxers</a>
+                <a href="{% url 'products' %}?category=socks" class="dropdown-item">Socks</a>
+                <a href="{% url 'products' %}?category=boxers,socks" class="dropdown-item">All underwear</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -53,10 +54,11 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All
+                    specials</a>
             </div>
         </li>
     </ul>
