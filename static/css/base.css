@@ -98,3 +98,14 @@ body {
         padding-top: 164px;
     }
 }
+
+/* add padding to the top when the navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 125px;
+    }
+
+    body {
+        height: calc(100vh - 125px);
+    }
+}
