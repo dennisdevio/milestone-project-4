@@ -2,6 +2,9 @@ html {
     height: 100%;
 }
 
+
+/* Home page */
+
 body {
     background: url('/media/homepage_background_image.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -9,7 +12,6 @@ body {
     color: #555;
     font-family: 'Roboto';
 }
-
 
 .icon {
     align-items: center;
@@ -65,6 +67,9 @@ body {
     padding: 0.5rem;
 }
 
+
+/* Product page */
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -92,7 +97,17 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* -------------------------------- Media Queries */
+
+/* Product detail page */
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+
+    /* ------------ Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
