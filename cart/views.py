@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
+
 def view_cart(request):
     """ A view that renders the shopping cart contents page """
 
     return render(request, 'cart/cart.html')
+
 
 def add_to_cart(request, item_id):
     """ Add desired quantity of the specified product to the shopping cart """
@@ -36,7 +38,8 @@ def add_to_cart(request, item_id):
 
 
 def modify_cart(request, item_id):
-    """ Modify the quantity of the specified product to the specified amount """
+    """ Modify the quantity of the specified 
+        product to the specified amount """
 
     quantity = int(request.POST.get('quantity'))
     size = None
