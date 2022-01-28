@@ -51,8 +51,8 @@
     <header class="container-fluid fixed-top">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="my-1"><i class="fas fa-shipping-fast"></i> FREE SHIPPING on orders
-                    over ${{ free_shipping_threshold }}!</h4>
+                <h4 class="my-1"><i class="fas fa-shipping-fast"></i> <span class="shipping-message">FREE SHIPPING</span> <span>on orders
+                    over ${{ free_shipping_threshold }}!</span></h4>
             </div>
         </div>
         <div class="row bg-light bg-gradient pt-lg-2 d-none d-lg-flex" id="topnav">
@@ -154,11 +154,9 @@
     {% endblock %}
 
     {% block postloadjs %}
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
-
 </body>
-
 </html>

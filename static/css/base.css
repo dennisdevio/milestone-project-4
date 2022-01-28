@@ -1,13 +1,13 @@
 
 
-/* Global style rules 
+/* Global style rules */
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-*/
+
 html {
     height: 100%;
     scroll-behavior: smooth;
@@ -34,6 +34,14 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.fa-shipping-fast {
+    color: rgb(247, 214, 28);
+}
+
+.shipping-message {
+    color: rgb(42, 196, 42);
 }
 
 .main-logo-link {
@@ -87,13 +95,17 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #fff;
+    background: #f8f9fa;
     z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important; 
+}
+
+.fa-star {
+    color: rgb(247, 214, 28);
 }
 
 .btt-button {
@@ -165,10 +177,10 @@ a.category-badge > span.badge:hover {
 /* add padding to the top when the navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 125px;
+        padding-top: 200px;
     }
 
     body {
-        height: calc(100vh - 125px);
+        height: calc(100vh - 200px);
     }
 }
