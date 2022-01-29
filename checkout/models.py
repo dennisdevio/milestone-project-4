@@ -42,7 +42,7 @@ class Order(models.Model):
         self.save()
 
     def save(self, *args, **kwargs):
-         """
+        """
         Override the original save method to set the order number
         if it hasn't been set already.
         """
@@ -70,4 +70,4 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'SKU' {self.product.sku} on order {self.order.ordernumber}'
+        return f'SKU {self.product.sku} on order {self.order.ordernumber}'
