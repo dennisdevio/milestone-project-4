@@ -62,7 +62,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mens_style_store.urls'
 
-CRISPY_TEMPLATE_PACK = 'boostrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
