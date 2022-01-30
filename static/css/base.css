@@ -205,6 +205,12 @@ a.category-badge > span.badge:hover {
 }
 
 
+/* Checkout page */
+
+button.complete-order-button:hover {
+    color: rgb(247, 214, 28);
+}
+
     /* ---------- Media Queries ---------- */
 
 /* Slightly larger container on xl screens */
