@@ -9,7 +9,11 @@ I decided to go with three sizes of wireframes to account for the responsive des
 - The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 - The wireframes for this project can be found [at this link](https://dennischmielewski323696.invisionapp.com/freehand/Mens-Style-Store-WkUKYDrWh)
 
+## Testing
 
+#### Bugs Fixed
+- Stripe API not working was fixed by setting the Stripe API Keys in config vars in Heroku.
+- Heroku App crash was fixed by setting 'parse' in the database url if statement in settings.py.
 
 
 #### This project was made as part of Code Institute's Full Stack Software Development Programme. 
