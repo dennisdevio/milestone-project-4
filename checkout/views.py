@@ -8,7 +8,6 @@ from cart.contexts import cart_contents
 import stripe
 
 def checkout(request):
-    
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -25,7 +24,7 @@ def checkout(request):
         amount=stripe_total,
         currency=settings.STRIPE_CURRENCY,
     )
-    
+
     order_form = OrderForm()
 
     if not stripe_public_key:
