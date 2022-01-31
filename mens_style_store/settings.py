@@ -120,7 +120,7 @@ WSGI_APPLICATION = 'mens_style_store.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': = dj_database_url(os.environ.get('DATABASE_URL')) 
+        'default': dj_database_url(os.environ.get('DATABASE_URL')) 
     }
 else:
     DATABASES = {
