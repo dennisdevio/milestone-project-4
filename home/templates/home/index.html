@@ -11,7 +11,7 @@
 
 {% block content %}
 <div class="container h-100">
-    <div class="row h-100">
+    <div class="row h-50">
         <div class="col-7 col-md-6 my-auto">
             <h1 class="display-4 logo-font text-white">
                 Dressing men with Style
@@ -24,5 +24,39 @@
             </div>
         </div>
     </div>
+</div>
+
+ <!-- Special offers -->
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center text-uppercase text-white">Special Offers</h2>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 my-auto">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'media/shoes-unsplash.jpg' %}" alt="shoe displayed in new arrivals">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{% url 'products' %}?category=new_arrivals" class="btn btn-primary bg-black text-white">New Arrivals</a>
+                    </h5>
+                </div>
+            </div>
+        </div> 
+        <div class="col-12 col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'media/shirts-unsplash.jpg' %}" alt="shirt displayed in deals">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{% url 'products' %}?category=deals" class="btn btn-primary bg-black text-white">Deals</a>
+                    </h5>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div>
+<hr class="mt-0">
 </div>
 {% endblock %}
