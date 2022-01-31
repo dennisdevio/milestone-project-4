@@ -14,6 +14,7 @@ I decided to go with three sizes of wireframes to account for the responsive des
 #### Bugs Fixed
 - Stripe API not working was fixed by setting the Stripe API Keys in config vars in Heroku.
 - Heroku App crash was fixed by setting 'parse' in the database url if statement in settings.py.
+- Rolled to a new STRIPE_SECRET_KEY as the old one was accidentally compromised during Stripe API bug troubleshooting 
 
 
 #### This project was made as part of Code Institute's Full Stack Software Development Programme. 
