@@ -8,8 +8,8 @@ from cart.contexts import cart_contents
 import stripe
 
 def checkout(request):
-    stripe_public_key = 'pk_test_51KNTX0HEdllUJnJgj5OkEtA3B3yg0qQwMXzzjC7aR6ERmDAWORLnHmLsiETwQRnWkoWFnmPcRk7hEoRfvEau6Vu000nRa1Avz1'
-    stripe_secret_key = 'sk_test_51KNTX0HEdllUJnJgyftecGRkFeZxkMmiudXGZD55rA5NVRm5pBIsqIYJwUjZYzuNlbUr42slrZTXN6KQdTIe03lj0083DcTpT6'
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     cart = request.session.get('cart', {})
     if not cart:
