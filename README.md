@@ -12,6 +12,20 @@ I decided to go with three sizes of wireframes to account for the responsive des
 - The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 - The wireframes for this project can be found [at this link](https://dennischmielewski323696.invisionapp.com/freehand/Mens-Style-Store-WkUKYDrWh)
 
+## Features
+- Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
+- A clothing item sarch and sorting function.
+- A profile page with saved personal order information.
+- A wishlist function for logged in user.
+- An order and payment function.
+- A contact form for customer support.
+
+#### Features Left to Implement
+Due to time constraints the following features are left unimplemented at this point but will be implemented on a future release:
+
+- A review function for each clothing product.
+- Stripe webhooks for increased security.
+
 ## Technologies
 The technologies used to build this website are the following
 
