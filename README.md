@@ -11,6 +11,39 @@ I made wireframes for a total of six pages - the landing page, the category view
 I decided to go with three sizes of wireframes to account for the responsive design that allows the page to be view on any screen, from mobile phones to large desktop monitors. For large screens, medium size screens and small screens each page.
 - The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 - The wireframes for this project can be found [at this link](https://dennischmielewski323696.invisionapp.com/freehand/Mens-Style-Store-WkUKYDrWh)
+## Technologies
+The technologies used to build this website are the following
+
+#### Development
+- [Gitpod Online IDE](https://www.gitpod.io/) for all code editing.
+- [Firefox Devtools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
+
+#### Testing
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for performance testing of the website.
+- [The W3C Markup Validator](https://validator.w3.org/) for testing of all HTML code.
+- [The W3C CSS Validator](https://jigsaw.w3.org/css-validator/) for testing of all CSS code.
+- [JSHint](https://jshint.com/) for testing of all JavaScript code.
+
+#### Images
+- [Unsplash](https://unsplash.com/) the landing page images were downloaded from Unsplash. 
+- [Boutiqe Ado](https://github.com/Code-Institute-Solutions/boutique_ado_images/tree/master/pics) the men's wear product images provided in the 'Boutiqe Ado' walkthrough project were filtered out and used for this project.
+
+#### Fonts & Icons
+- [Google Fonts](https://fonts.google.com/share?selection.family=Noto%20Sans%20KR%7COpen%20Sans) the fonstyle 'Roboto' used on the website. 
+- [Font Awesome](https://fontawesome.com/start) for all website icons.
+
+#### API's
+- [Stripe API](https://openweathermap.org/api) for making test payments during this project.
+
+### Languages 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for laying the foundation and structuring the basis of the website. 
+- [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the placement and styling of all HTML5 content on the website. 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for creating interactivity with Stripe, Toast messages, searching products and setting the shopping cart quantities.
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) was used for handling the data base models and app logic with Django.
+
+### Frameworks
+- [Bootstrap v4.4.1](https://getbootstrap.com/docs/4.4/getting-started/download/) Bootstrap 4.4.1 was used to implement a responsive mobile-first design on the website.
+- [Django 3.2](https://docs.djangoproject.com/en/4.0/releases/3.2/) Django 3.2 was used to implement Full Stack website with python.
 
 ## Testing
 
