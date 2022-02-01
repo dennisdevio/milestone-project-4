@@ -41,5 +41,5 @@
 
 select:invalid,
 select option[value=""] {
-  color: #aab7c4 !important:
+  color: #aab7c4 !important;
 }
