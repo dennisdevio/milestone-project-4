@@ -24,7 +24,7 @@ I decided to go with three sizes of wireframes to account for the responsive des
 Due to time constraints the following features are left unimplemented at this point but will be implemented on a future release:
 
 - A review function for each clothing product.
-- Stripe webhooks for increased security.
+- Stripe webhooks for increased payment security.
 
 ## Technologies
 The technologies used to build this website are the following
@@ -62,12 +62,15 @@ The technologies used to build this website are the following
 - Stripe API not working was fixed by setting the Stripe API Keys in config vars in Heroku.
 - Heroku App crash was fixed by setting 'parse' in the database url if statement in settings.py.
 - Rolled to a new STRIPE_SECRET_KEY as the old one was accidentally compromised during Stripe API bug troubleshooting 
+- The toast messages placement was off due to a wrongly placed div element.
+- The checkout page layput was off due to a wrongly placed div element.
 
 #### Bugs Left
+- I had troubles with getting the secret keys variables for Stripe and Django to work properly on the development server but it works on the live site so I left it and did not get to the bottom of it.
 - The Country field styling in the checkout form should be gray but I left it due to time constraints.
 
 ### Acknowledgements
-- Thank you to [Code Institute](https://codeinstitute.net/)'s tutor Chris and his video lessons from 'Boutige Ado' on creating a Django project.
+- Thank you to [Code Institute](https://codeinstitute.net/)'s tutor Chris and his video lessons from 'Boutiqe Ado' on creating a Django project.
 - Thank you to [Code Institute](https://codeinstitute.net/)'s Tutor Support who help me tremendously along the way.
 - Thank you to My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed support.
 - Thank you to [Code Institute](https://codeinstitute.net/)'s Student Care
