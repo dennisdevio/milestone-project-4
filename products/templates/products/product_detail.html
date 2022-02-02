@@ -28,28 +28,28 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0"><strong>{{ product.name }}</strong></p>
-                <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                <p class="mb-0 text-black"><strong>{{ product.name }}</strong></p>
+                <p class="lead mb-0 text-left font-weight-bold text-black">${{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
-                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-black">
                         <i class="fas fa-tag mr-1">{{ product.category.friendly_name }}</i>
                     </a>
                 </p>
                 {% endif %}
                 {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                <small class="text-black"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                 {% else %}
-                <small class="text-muted">No Rating</small>
+                <small class="text-black">No Rating</small>
                 {% endif %}
-                <p class="mt-3">{{ product.description }}</p>
+                <p class="mt-3 text-black">{{ product.description }}</p>
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
                     {% with product.has_sizes as s %}
                         {% if s %}
                             <div class="col-12">
-                                <p><strong>Size:</strong></p>
+                                <p class="text-black"><strong>Size:</strong></p>
                                 <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
                                     <option value="xs">XS</option>
                                     <option value="s">S</option>
@@ -60,7 +60,7 @@
                             </div>
                         {% endif %}
                             <div class="col-12">
-                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <p class="mt-3 text-black"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <div class="input-group-prepend">

@@ -65,7 +65,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #333;
     color: white;
 }
 
@@ -94,8 +94,18 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #f8f9fa;
+    background: #999999c7;
     z-index: -1;
+}
+
+.products-home {
+    color: black;
+    text-decoration: none;
+}
+
+.products-home:hover {
+    color: #333;
+    text-decoration: none;
 }
 
 a.category-badge > span.badge:hover {
@@ -111,8 +121,9 @@ a.category-badge > span.badge:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 20px;
-    right: 10px;
+    bottom: 75px;
+    right: 25px;
+    z-index: 5;
 }
 
 
@@ -209,6 +220,48 @@ a.category-badge > span.badge:hover {
 button.complete-order-button:hover {
     color: rgb(247, 214, 28);
 }
+
+
+/* Footer */
+
+ul {
+    list-style: none;
+}
+
+footer {
+    margin-top: 300px;
+    position: relative;
+    height: 57px;
+    background-color: #fff;
+    text-align: center;
+    color: black;
+}
+
+footer li {
+    display: inline;
+    padding: 15px;
+}
+
+footer i {
+    color: black;
+    font-size: 140%;
+    margin-top: 15px;
+}
+
+footer i:hover {
+    color: #333;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
 
     /* ---------- Media Queries ---------- */
 
