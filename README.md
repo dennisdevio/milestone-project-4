@@ -127,7 +127,7 @@ This project reposity is hosted on
 - [GitHub](https://github.com/) - you can find it at [this link](https://tetrapak-dev.github.io/milestone-project-4/)
 
 ### Hosting Platforms
-The website was depolyed on Heroku  while the static files are hosted on Amazon Web Services.
+The website was deployed on Heroku while the static files are hosted on Amazon Web Services.
 
 #### Bugs Left
 - I had troubles with getting the secret keys variables for Stripe and Django to work properly on the development server but it works on the live site so I left it and did not get to the bottom of it.
@@ -135,7 +135,7 @@ The website was depolyed on Heroku  while the static files are hosted on Amazon 
 - The Static files don't work in the deployed site. There seems to be an issue with the communication between Heroku and Amazon Web Services. I checked the logs and both Heroku and Amazon updates correctly when pushing changes but the changes don't reflect on the live site. I did not have more time to resolve it at this point.
 
 ### Acknowledgements
-- Thank you to [Code Institute](https://codeinstitute.net/)'s tutor Chris and his video lessons from 'Boutiqe Ado' on creating a Django project.
+- Thank you to [Code Institute](https://codeinstitute.net/)'s tutor Chris and his video lessons from 'Boutiqe Ado' on creating a Django project. The video series has been very important for me during this project.
 - Thank you to [Code Institute](https://codeinstitute.net/)'s Tutor Support who help me tremendously along the way.
 - Thank you to My mentor [Akshat Garg](https://github.com/akshatnitd) for his very much appreciated and needed support.
 - Thank you to [Code Institute](https://codeinstitute.net/)'s Student Care
