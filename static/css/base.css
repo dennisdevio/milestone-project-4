@@ -121,7 +121,7 @@ a.category-badge > span.badge:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 75px;
+    bottom: 25px;
     right: 25px;
     z-index: 5;
 }
@@ -231,14 +231,14 @@ ul {
 footer {
     margin-top: 300px;
     position: relative;
-    height: 57px;
+    height: 150px;
     background-color: #fff;
     text-align: center;
     color: black;
 }
 
 footer li {
-    display: inline;
+    display: inline-block;
     padding: 15px;
 }
 
@@ -253,6 +253,7 @@ footer i:hover {
 }
 
 footer a {
+    padding-top: 10;
     color: black;
     text-decoration: none;
 }
