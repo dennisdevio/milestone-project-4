@@ -1,5 +1,5 @@
 # Men's Style Store
-Men's Style Store is a fully functional E-commerce website that cater to men's clothing and style needs.
+Men's Style Store is a E-commerce website that cater to men's clothing and style needs.
 It's allows the customer to select the clothing item for their choice, pick the desired size & quantity and order it directly online via credit card payments. Furthermore the customer can create their personal account which allows them to see their current and past orders.
 The purpose of this website is to provide an easy and appealing way for the site owner to run an online business and gain a location independent, pontentially global customer base, as well as for the customer to purchase their desired items regardless of their location.
 
@@ -11,7 +11,7 @@ You can view the Men's Style Store E-commmerce website [here](https://mens-style
 
 ### User Stories
 My goal was to create a website with a vibe that is appealing to the customer, with an intuitive design that presents the products, the sign up and log in forms, and the profile functionality in a clear manner.
-Additinally my aim was to create a site where the user can store their personal information such as shipping info and past orders. This feature was not fully implemented.
+Additinally my aim was to create a site where the user can store their personal information such as shipping info and past orders. This feature is not fully implemented at the moment.
 My second goal was to create a website that is available wherever the user is and that works smoothly on all devices, so that they can make a purchase or see their order whenever they need it.
 
 #### Business Owner User Goals
@@ -41,18 +41,38 @@ I decided to go with three sizes of wireframes to account for the responsive des
 - The wireframes were created using - [InVision](https://www.invisionapp.com/). 
 - The wireframes for this project can be found [at this link](https://dennischmielewski323696.invisionapp.com/freehand/Mens-Style-Store-WkUKYDrWh)
 
+### Structure
+The structure of the website begins with a landing page with a navbarat the top and links to customer support and the newsletter in the footer. The navbar displaying all clothing products in categories. The products page displays either all products or by category. Then there's an individual products page dsiplaying info such as size, quantity, price and rating. 
+There's a log in function where users can store their shipping information and will be able to see their orders.
+Additionally there's a payment function to purchase desired orders.
+
+
+### Design
+The design of the website is modern, intuitive and easy to follow with an appealing landing page image telling the customer what the store is about. The products section and de profile section have a semitransparent grey background so the landing page image is partially visible throughout the site for an appealing visual effect. 
+
 ## Features
+Due to time constraints and various problems along the way the all following features are not yet fully functional at the moment.
+
 - Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
 - A clothing item search and sorting function.
-- A profile page with saved personal order information.
-- A wishlist function for logged in user.
+- A profile page with saved personal shipping information. Thw ability to see past orders is not fully implemented at this point.
+- A store newsletter app which the admin user will be able to fully modify (create, update and delete, anyone can read it) from within their account. This has not yet been fully implemented.
 - An order and payment function.
-- A contact form for customer support.
+- A contact form for customer support, it is not fully operational at the moment.
 
 #### Features Left to Implement
-Due to time constraints the following features are left unimplemented at this point but will be implemented on a future release:
+Critical features left to implement are:
+
+ - viewing logged in order history.
+
+ - getting the customer support form to function properly.
+
+ - Providing a way for the admin to post newsletters.
+
+The following features are left unimplemented at this point but will be implemented on a future release:
 
 - A review function for each clothing product.
+
 - Stripe webhooks for increased payment security.
 
 ## Technologies
@@ -94,9 +114,25 @@ The technologies used to build this website are the following
 - The toast messages placement was off due to a wrongly placed div element.
 - The checkout page layput was off due to a wrongly placed div element.
 
+## Deployment
+The deployment of this project was accomplished using Git, Gitpod, GitHub, Heroku & Amazon Web Services
+
+### Repository
+If you want to view this website locally on your computer:
+- Click on your preferred clone method in the upper right-hand side corner of this repository.
+- Open your cloned repository in your IDE of choice.
+- Run the website on a local server from there.
+
+This project reposity is hosted on  
+- [GitHub](https://github.com/) - you can find it at [this link](https://tetrapak-dev.github.io/milestone-project-4/)
+
+### Hosting Platforms
+The website was depolyed on Heroku  while the static files are hosted on Amazon Web Services.
+
 #### Bugs Left
 - I had troubles with getting the secret keys variables for Stripe and Django to work properly on the development server but it works on the live site so I left it and did not get to the bottom of it.
 - The Country field styling in the checkout form should be gray but I left it due to time constraints.
+- The Static files don't work in the deployed site. There seems to be an issue with the communication between Heroku and Amazon Web Services. I checked the logs and both Heroku and Amazon updates correctly when pushing changes but the changes don't reflect on the live site. I did not have more time to resolve it at this point.
 
 ### Acknowledgements
 - Thank you to [Code Institute](https://codeinstitute.net/)'s tutor Chris and his video lessons from 'Boutiqe Ado' on creating a Django project.
