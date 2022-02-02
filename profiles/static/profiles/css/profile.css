@@ -1,3 +1,9 @@
+
+.order-history {
+    max-height: 416px; /* height of profile form + submit button */
+    overflow-y: auto;
+}
+
 .user-profile-form::placeholder {
     color: #aab7c4;
 }
