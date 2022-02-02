@@ -7,6 +7,34 @@ The purpose of this website is to provide an easy and appealing way for the site
 You can view the Men's Style Store E-commmerce website [here](https://mens-style-store.herokuapp.com/).
 ![mockup.png](https://github.com/tetrapak-dev/milestone-project-4/blob/master/media/mockup.png)
 
+## UX
+
+### User Stories
+My goal was to create a website with a vibe that is appealing to the customer, with an intuitive design that presents the products, the sign up and log in forms, and the profile functionality in a clear manner.
+Additinally my aim was to create a site where the user can store their personal information such as shipping info and past orders. This feature was not fully implemented.
+My second goal was to create a website that is available wherever the user is and that works smoothly on all devices, so that they can make a purchase or see their order whenever they need it.
+
+#### Business Owner User Goals
+- As a business owner I want the products on the website to be easily modifyable by the admin.
+- As a business owner I want to collect payments via the website.
+- As a business owner I want users to easily register an account.
+- As a business owner I want the website to be accessible to both registered and non-registered users.
+- As a business owner I want to store customer information securely.
+
+#### First Time User Goals
+- As a first time user I want to view a list of products.
+- As a first time user I want to search products.
+- As a first time user I want to sort products by category.
+- As a first time user I want to view individual products.
+- As a first time user I want to select a size & quantity for purchase.
+
+#### Returning User Goals
+- As an account holder I want to be able to update my profile when I need to.
+- As an account holder I want to see my purchase history.
+- As an account holder I want to know your website is reliable on all devices I might use, particularly in regards to payments and personal information.
+- As an account holder I want make payments smoothly.
+- As an account holder I want order confirmation.
+
 ### Wireframes
 I made wireframes for a total of six pages - the landing page, the category view, the single item view, the register page, the login page, and the personal account page.The landing page shows the top sold items in the store. The category page shows all products in a given category, including an 'All Products' page. When the user clicks on a product they are redirected to the single items view. The register and login pages layout are basically identical but with differing functionality. Lastly, if the user wishes to track their orders they can register and login to their perosnal account to view their current orders displayed at the top of the page and their previous orders displayed further down the page.
 I decided to go with three sizes of wireframes to account for the responsive design that allows the page to be view on any screen, from mobile phones to large desktop monitors. For large screens, medium size screens and small screens each page.
@@ -15,7 +43,7 @@ I decided to go with three sizes of wireframes to account for the responsive des
 
 ## Features
 - Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
-- A clothing item sarch and sorting function.
+- A clothing item search and sorting function.
 - A profile page with saved personal order information.
 - A wishlist function for logged in user.
 - An order and payment function.
