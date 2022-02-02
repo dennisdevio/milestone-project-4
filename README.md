@@ -5,6 +5,7 @@ The purpose of this website is to provide an easy and appealing way for the site
 
 ## Showcase
 You can view the Men's Style Store E-commmerce website [here](https://mens-style-store.herokuapp.com/).
+![mockup.png](https://github.com/tetrapak-dev/milestone-project-4/blob/master/media/mockup.png)
 
 ### Wireframes
 I made wireframes for a total of six pages - the landing page, the category view, the single item view, the register page, the login page, and the personal account page.The landing page shows the top sold items in the store. The category page shows all products in a given category, including an 'All Products' page. When the user clicks on a product they are redirected to the single items view. The register and login pages layout are basically identical but with differing functionality. Lastly, if the user wishes to track their orders they can register and login to their perosnal account to view their current orders displayed at the top of the page and their previous orders displayed further down the page.
