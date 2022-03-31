@@ -120,9 +120,13 @@ The technologies used to build this website are the following
 - The sizing on selected clothing items does not show, whereas it previously did. Due to time constrains I decided to leave it for this deployment.
 - The mobile navbar is poorly aligned on Iphone 5 in particular, through Firefox Devtools. The navbar takes up more space than it should and the nav items aren't neatly aligned in a row. I left it for now to work on more pressing issues.
 - The footer does not display correctly on the e-mail confirmation pages.
+- I had troubles with getting the secret keys variables for Stripe and Django to work properly on the development server but it works on the production site so I left it.
+- The Country field styling in the checkout form should be gray but I left it due to time constraints.
 
 ## Deployment
 The deployment of this project was accomplished using Git, Gitpod, GitHub, Heroku & Amazon Web Services
+
+
 
 ### Repository
 If you want to view this website locally on your computer:
@@ -134,12 +138,19 @@ This project reposity is hosted on
 - [GitHub](https://github.com/) - you can find it at [this link](https://tetrapak-dev.github.io/milestone-project-4/)
 
 ### Hosting Platforms
-The website was deployed on Heroku while the static files are hosted on Amazon Web Services.
+The website is deployed to [Heroku](https://www.heroku.com/home) directly from the 'master' branch. While the static files are hosted on [Amazon Web Services](https://aws.amazon.com/).
 
-#### Bugs Left
-- I had troubles with getting the secret keys variables for Stripe and Django to work properly on the development server but it works on the live site so I left it and did not get to the bottom of it.
-- The Country field styling in the checkout form should be gray but I left it due to time constraints.
-- The Static files don't work in the deployed site. There seems to be an issue with the communication between Heroku and Amazon Web Services. I checked the logs and both Heroku and Amazon updates correctly when pushing changes but the changes don't reflect on the live site. I did not have more time to resolve it at this point.
+The deployed website will update automatically when new changes are committed to the master branch. 
+
+To host this website:
+- I created a requirements.txt file using the terminal command 'pip freeze > requirements.txt'.
+- Then created a Procfile with the terminal command 'echo web: gunicorn mens_style_store.wsgi:application > Procfile'.
+- I added, committed, and pushed the files to the projects Github repository.
+- After that I created a new app on the Heroku website by clicking the "New" button in the dashboard.
+- From within the new app I clicked on settings --> deploy --> deployment method and then selected Github to connect the app to my Github repository.
+- Lastly I added the necessary config vars for 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'DATABASE_URL', 'EMAIL_HOST_PASS', 'EMAIL_HOST_USER', 'SECRET_KEY', 'STRIPE_PUBLIC_KEY', 'STRIPE_SECRET_KEY' and 'USE_AWS' in order to make the app able to run.
+
+The website can be viewed [here](https://mens-style-store.herokuapp.com/)
 
 ## Credits
 - Most mens clothing items from 'Boutiqe Ado' mini-project where borrowed for this Milestone project.
