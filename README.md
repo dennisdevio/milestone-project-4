@@ -112,7 +112,14 @@ The technologies used to build this website are the following
 - Heroku App crash was fixed by setting 'parse' in the database url if statement in settings.py.
 - Rolled to a new STRIPE_SECRET_KEY as the old one was accidentally compromised during Stripe API bug troubleshooting 
 - The toast messages placement was off due to a wrongly placed div element.
-- The checkout page layput was off due to a wrongly placed div element.
+- The checkout page layout was off due to a wrongly placed div element.
+- The signup & login did not work on the deployed site. I had missed to migrate the profile and user models to Django which was how I fixed the issue.
+
+
+#### Bugs Left
+- The sizing on selected clothing items does not show, whereas it previously did. Due to time constrains I decided to leave it for this deployment.
+- The mobile navbar is poorly aligned on Iphone 5 in particular, through Firefox Devtools. The navbar takes up more space than it should and the nav items aren't neatly aligned in a row. I left it for now to work on more pressing issues.
+- The footer does not display correctly on the e-mail confirmation pages.
 
 ## Deployment
 The deployment of this project was accomplished using Git, Gitpod, GitHub, Heroku & Amazon Web Services
