@@ -51,12 +51,12 @@ Additionally there's a payment function to purchase desired orders.
 The design of the website is modern, intuitive and easy to follow with an appealing landing page image telling the customer what the store is about. The products section and de profile section have a semitransparent grey background so the landing page image is partially visible throughout the site for an appealing visual effect. 
 
 ## Features
-Due to time constraints and various problems along the way the all following features are not yet fully functional at the moment.
+CRUD functionality and Payments are working properly. Current features will be improved and further features will be added on a future release.
 
 - Responsive Design across all device sizes, including a hamburger menu button on smaller screens.
 - A clothing item search and sorting function.
 - A profile page with saved personal shipping information. Thw ability to see past orders is not fully implemented at this point.
-- A store newsletter app which the admin user will be able to fully modify (create, update and delete, anyone can read it) from within their account. This has not yet been fully implemented.
+- A store newsletter app which the admin user will be able to fully modify (create, update and delete, anyone can read it) from within their account. This has not yet been fully developed.
 - An order and payment function.
 - A contact form for customer support, it is not fully operational at the moment.
 
@@ -68,6 +68,10 @@ Critical features left to implement are:
  - getting the customer support form to function properly.
 
  - Providing a way for the admin to post newsletters.
+
+ - Showing detailed order receipt upon purchase.
+
+ - Sending an email confirmation upon purchase.
 
 The following features are left unimplemented at this point but will be implemented on a future release:
 
@@ -83,6 +87,7 @@ The technologies used to build this website are the following
 - [Firefox Devtools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
 
 #### Testing
+- [Firefox Devtools](https://developer.mozilla.org/en-US/docs/Tools) for all functional testing throughout the development process.
 
 #### Images
 - [Unsplash](https://unsplash.com/) the landing page images were downloaded from Unsplash. 
@@ -106,6 +111,8 @@ The technologies used to build this website are the following
 - [Django 3.2](https://docs.djangoproject.com/en/4.0/releases/3.2/) Django 3.2 was used to implement a Full Stack website with python.
 
 ## Testing
+Previously the site did not work as intended as the register/login functionality was broken. Now site works well as a whole. All CRUD and Payment functionality is present. During the later stages of development new bugs wire introduced, e. g the sizes vanishing from detailed view, it does not affect the site functionality itelf so due to time constraints i left it for this release. The order confirmation has room for improvement, it is not fully detailed at the moment but it serves it's purpose. The site works on all screens, both mobile and desktop. There is a minor issue with the navbar on Iphone 5. It could align a bit better but apart from that it works as intended.
+
 
 #### Bugs Fixed
 - Stripe API not working was fixed by setting the Stripe API Keys in config vars in Heroku.
@@ -114,6 +121,7 @@ The technologies used to build this website are the following
 - The toast messages placement was off due to a wrongly placed div element.
 - The checkout page layout was off due to a wrongly placed div element.
 - The signup & login did not work on the deployed site. I had missed to migrate the profile and user models to Django which was how I fixed the issue.
+- During imlementation of the 'delete product' functionality the development server suddenly showed an error message, I resolved it by going into dev tools and clearing all stored website data.
 
 
 #### Bugs Left
@@ -124,9 +132,7 @@ The technologies used to build this website are the following
 - The Country field styling in the checkout form should be gray but I left it due to time constraints.
 
 ## Deployment
-The deployment of this project was accomplished using Git, Gitpod, GitHub, Heroku & Amazon Web Services
-
-
+The deployment of this project was accomplished using Git, Gitpod, GitHub, Heroku & Amazon Web Services. The website itself is hosted on Heroku while the static files are hosted on AWS.
 
 ### Repository
 If you want to view this website locally on your computer:
